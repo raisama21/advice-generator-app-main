@@ -1,0 +1,86 @@
+/* CSS custom variable */
+:root {
+  --pc-1: hsl(193, 38%, 86%);
+  --pc-2: hsl(150, 100%, 66%);
+  --nc-1: hsl(217, 19%, 38%);
+  --nc-2: hsl(217, 19%, 24%);
+  --nc-3: hsl(218, 23%, 16%);
+
+  --fs-quote: 1.5rem;
+}
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--nc-3);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 33.75rem;
+  padding: 2.5rem 1.75rem 4rem;
+  margin-inline: auto;
+  background-color: var(--nc-2);
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.advice-index {
+  font-weight: 800;
+  color: var(--pc-2);
+  letter-spacing: 0.25rem;
+}
+
+.quote {
+  margin-block: 2rem;
+  font-size: var(--fs-quote);
+  font-weight: 800;
+  color: var(--pc-1);
+}
+
+.dice {
+  padding: 1.25rem;
+  border-radius: 50%;
+  background-color: var(--pc-2);
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, 50%);
+}
+
+@media (min-width: 40rem) {
+  .container {
+    padding: 3.25rem 3rem 4.5rem;
+  }
+
+  .quote {
+    margin-block: 2rem 2.5rem;
+  }
+}
