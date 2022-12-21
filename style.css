@@ -64,6 +64,10 @@ main {
   color: var(--pc-1);
 }
 
+.divider img {
+  margin-inline: auto;
+}
+
 .dice {
   padding: 1.25rem;
   border-radius: 50%;
